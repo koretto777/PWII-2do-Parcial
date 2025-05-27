@@ -7,12 +7,50 @@
 body {
     font-family: sans-serif;
     padding: 1em;
-    background-color: beige;
+    background-color: rgb(16, 7, 44);
 }
 
 h1 {
     text-align: center;
     margin-top: 1em;
     margin-bottom: 1em;
-    color: brown;
+    color: rgb(255, 255, 255);
+}
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 1em;
+    padding: 1em;
+    border-radius: 1em;
+    margin: 0 auto;
+    max-width: 1440px;
+}
+
+.Pokemon {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1em;
+    padding: 1em;
+    border-radius: 1em;
+    background-color: white;
+}
+
+.pokemon-image {
+    width: 100%;
+    max-width: 200%;
+    border-radius: 50%;
+    overflow: hidden;
+    background-color: rgb(243, 166, 147);
+}
+
+.pokemon-name {
+    text-align: center;
+    font-size: 2em;
+    color:rgb(30, 4, 4);
+}
+
+.pokemon-description {
+    line-height: 1.36em;
 }
